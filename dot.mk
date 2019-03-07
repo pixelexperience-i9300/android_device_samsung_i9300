@@ -3,21 +3,21 @@ PRODUCT_RELEASE_NAME := i9300
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
-$(call inherit-product, device/samsung/i9300/i9300.mk)
+$(call inherit-product, device/samsung/i9300/device.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1280
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9300
-PRODUCT_NAME := lineage_i9300
+PRODUCT_NAME := dot_i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9300
 PRODUCT_MANUFACTURER := samsung
