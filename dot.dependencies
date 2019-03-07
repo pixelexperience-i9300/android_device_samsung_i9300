@@ -13,9 +13,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "dot-i9300/android_packages_apps_SamsungServiceMode",
+        "repository":   "dot-i9300/packages_apps_SamsungServiceMode",
         "target_path":  "packages/apps/SamsungServiceMode",
-        "revision":     "aosp-8.1"
+        "revision":     "master"
     },    
     {
         "remote":       "github",
