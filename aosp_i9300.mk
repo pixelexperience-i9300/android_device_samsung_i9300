@@ -1,6 +1,16 @@
 # Release name
 PRODUCT_RELEASE_NAME := i9300
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOTANIMATION_HALF_RES := true
+
+# Devive Arch
+TARGET_GAPPS_ARCH := arm
+
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
@@ -8,16 +18,13 @@ $(call inherit-product, device/samsung/i9300/device.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
-
-# Inherit some common stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Characterization of settings for PixelExperience GO
+IS_GO_VERSION := true
+TARGET_MINIMAL_APPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9300
-PRODUCT_NAME := dot_i9300
+PRODUCT_NAME := aosp_i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9300
 PRODUCT_MANUFACTURER := samsung
