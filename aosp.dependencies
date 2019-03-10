@@ -1,15 +1,15 @@
 [
     {
-        "remote":       "github",
-        "repository":   "dot-i9300/android_device_samsung_smdk4412-common",
+        "remote":       "gitlab",
+        "repository":   "PixelExperience-i9300/device-tree/device_samsung_smdk4412-common",
         "target_path":  "device/samsung/smdk4412-common",
-        "revision":     "dot-o"
+        "revision":     "oreo-mr1"
     },
     {
-        "remote":       "github",
-        "repository":   "dot-i9300/android_hardware_samsung",
+        "remote":       "gitlab",
+        "repository":   "PixelExperience-i9300/specific-things/hardware_samsung",
         "target_path":  "hardware/samsung",
-        "revision":     "dot-o"
+        "revision":     "oreo-mr1"
     },
     {
         "remote":       "github",
