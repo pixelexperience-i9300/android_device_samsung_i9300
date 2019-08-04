@@ -1,13 +1,13 @@
 [
     {
-        "remote":       "gitlab",
-        "repository":   "PixelExperience-i9300/device-tree/device_samsung_smdk4412-common",
+        "remote":       "github",
+        "repository":   "pixelexperience-i9300/android_device_samsung_smdk4412-common",
         "target_path":  "device/samsung/smdk4412-common",
         "revision":     "pie"
     },
     {
-        "remote":       "gitlab",
-        "repository":   "PixelExperience-i9300/specific-things/hardware_samsung",
+        "remote":       "github",
+        "repository":   "pixelexperience-i9300/android_hardware_samsung",
         "target_path":  "hardware/samsung",
         "revision":     "pie"
     },
@@ -19,7 +19,7 @@
     },    
     {
         "remote":       "github",
-        "repository":   "ChronoMonochrome/android_kernel_samsung_smdk4412",
+        "repository":   "team-infusion-developers/android_kernel_samsung_smdk4412",
         "target_path":  "kernel/samsung/smdk4412",
         "revision":     "lineage-16.0"
     }  
