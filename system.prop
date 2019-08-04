@@ -48,6 +48,10 @@ ro.hwui.path_cache_size=2
 ro.hwui.r_buffer_cache_size=1
 ro.hwui.texture_cache_size=8
 
+# Improve battery 
+wifi.supplicant_scan_interval=240
+pm.sleep_mode=4
+
 # Rendering Tweaks
 debug.composition.type=c2d
 debug.egl.hw=1
@@ -241,3 +245,25 @@ debug.composition.type=gpu
 
 # Better image quality, lower performance.
 persist.sys.use_dithering=1
+
+# art optimization
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-Xmx=256m
+
+# Scrolling tweaks
+ro.max.fling_velocity=8000
+ro.min.fling_velocity=50
+
+
+# Low memory device
+ro.config.low_ram=true
+
+# Force high-end graphics in low ram mode
+persist.sys.force_highendgfx=true
+
+# Reduce background apps limit to 16 on low-tier devices
+ro.sys.fw.bg_apps_limit=16
+
+# Set max background services
+ro.config.max_starting_bg=4
